@@ -28,13 +28,13 @@ import net.minecraft.particle.ParticleType;
  * public static final DefaultParticleType SIMPLE_TEST_PARTICLE = FabricParticleTypes.simple();
  * public static final DefaultParticleType CUSTOM_TEST_PARTICLE = FabricParticleTypes.simple();
  *
- * @Override
+ * '@'Override
  * public void onInitialize() {
  *     Registry.register(Registry.PARTICLE_TYPE, new Identifier("testmod", "simple"), SIMPLE_TEST_PARTICLE);
  *     Registry.register(Registry.PARTICLE_TYPE, new Identifier("testmod", "custom"), CUSTOM_TEST_PARTICLE);
  * }}</pre>
  *
- * @see ParticleModClient in the fabric example mods for a more complete usage.
+ * <p>See ParticleModClient in the fabric example mods for a more complete usage.</p>
  */
 public final class FabricParticleTypes {
 	private FabricParticleTypes() { }
