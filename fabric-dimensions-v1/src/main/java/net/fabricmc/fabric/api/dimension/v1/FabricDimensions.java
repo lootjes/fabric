@@ -83,7 +83,7 @@ public final class FabricDimensions {
 	 * @param <E>          the type of the teleported entity
 	 * @return the teleported entity, or a clone of it
 	 * @throws IllegalStateException if this method is called on a client entity
-	 * @apiNote this method must be called from the main server thread
+	 * '@'apiNote this method must be called from the main server thread
 	 */
 	public static <E extends Entity> E teleport(E teleported, DimensionType destination, /*Nullable*/ EntityPlacer customPlacer) {
 		Preconditions.checkState(!teleported.world.isClient, "Entities can only be teleported on the server side");

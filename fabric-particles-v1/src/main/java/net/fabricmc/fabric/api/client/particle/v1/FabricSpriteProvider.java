@@ -31,7 +31,7 @@ import net.minecraft.client.texture.SpriteAtlasTexture;
  * interface containing the sprites set loaded for their particle from the
  * active resourcepacks.
  *
- * @see ParticleFactoryRegistry#register(type, constructor)
+ * '@'see ParticleFactoryRegistry#register(type, constructor)
  * @see ParticleFactoryRegistry.PendingParticleFactory
  */
 public interface FabricSpriteProvider extends SpriteProvider {

@@ -55,7 +55,7 @@ public final class WeightedBiomePicker {
 	/**
 	 * Searches with the specified target value.
 	 *
-	 * @param target The target value, must satisfy the constraint 0 <= target <= currentTotal
+	 * @param target The target value, must satisfy the constraint 0 ⟸ target ⟸ currentTotal
 	 * @return The result of the search
 	 */
 	ContinentalBiomeEntry search(final double target) {

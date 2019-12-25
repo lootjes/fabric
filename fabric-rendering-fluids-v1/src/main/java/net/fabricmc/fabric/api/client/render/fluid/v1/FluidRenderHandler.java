@@ -43,8 +43,9 @@ public interface FluidRenderHandler {
 	/**
 	 * Get the tint color for a fluid being rendered at a given position.
 	 *
-	 * @note As of right now, our hook cannot handle setting a custom alpha
+	 * <p>Note: As of right now, our hook cannot handle setting a custom alpha
 	 * tint here - as such, it must be contained in the texture itself!
+	 * </p>
 	 *
 	 * @param view The world view pertaining to the fluid. May be null!
 	 * @param pos The position of the fluid in the world. May be null!

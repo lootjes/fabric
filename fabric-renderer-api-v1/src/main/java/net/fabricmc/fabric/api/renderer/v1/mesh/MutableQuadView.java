@@ -127,8 +127,9 @@ public interface MutableQuadView extends QuadView {
 	 *
 	 * <p>Models may also find this useful as the face for texture UV locking and rotation semantics.
 	 *
-	 * @implNote Note: This value is not persisted independently when the quad is encoded.
+	 *<p>Note: This value is not persisted independently when the quad is encoded.
 	 * When reading encoded quads, this value will always be the same as {@link #lightFace()}.
+	 * </p>
 	 */
 	MutableQuadView nominalFace(Direction face);
 

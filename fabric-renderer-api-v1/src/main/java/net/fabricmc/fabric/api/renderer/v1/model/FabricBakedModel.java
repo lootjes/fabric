@@ -62,7 +62,7 @@ public interface FabricBakedModel {
 	 * <p>Also called to render block models outside of chunk rebuild or block entity rendering.
 	 * Typically this happens when the block is being rendered as an entity, not as a block placed in the world.
 	 * Currently this happens for falling blocks and blocks being pushed by a piston, but renderers
-	 * should invoke this for all calls to {@link BlockModelRenderer#tesselate(ExtendedBlockView, BakedModel, BlockState, BlockPos, net.minecraft.client.render.BufferBuilder, boolean, java.util.Random, long)}
+	 * should invoke this for all calls to {'@'link BlockModelRenderer#tesselate(ExtendedBlockView, BakedModel, BlockState, BlockPos, net.minecraft.client.render.BufferBuilder, boolean, java.util.Random, long)}
 	 * that occur outside of chunk rebuilds to allow for features added by mods, unless
 	 * {@link #isVanillaAdapter()} returns true.
 	 *
@@ -76,12 +76,12 @@ public interface FabricBakedModel {
 	 * neighboring blocks (if appropriate).  Models only need to consider "sides" to the
 	 * extent the model is driven by connection with neighbor blocks or other world state.
 	 *
-	 * @note with {@link BakedModel#getQuads(BlockState, net.minecraft.util.math.Direction, java.util.Random)}, the random
+	 * <p>Note: with {@link BakedModel#getQuads(BlockState, net.minecraft.util.math.Direction, java.util.Random)}, the random
 	 * parameter is normally initialized with the same seed prior to each face layer.
 	 * Model authors should note this method is called only once per block, and call the provided
 	 * Random supplier multiple times if re-seeding is necessary. For wrapped vanilla baked models,
 	 * it will probably be easier to use {@link RenderContext#fallbackConsumer} which handles
-	 * re-seeding per face automatically.
+	 * re-seeding per face automatically.</p>
 	 *
 	 * @param blockView Access to world state. Using {@link net.fabricmc.fabric.api.rendering.data.v1.RenderAttachedBlockView#getBlockEntityRenderAttachment(BlockPos)} to
 	 * retrieve block entity state unless thread safety can be guaranteed.

@@ -200,7 +200,7 @@ public final class FabricDimensionType extends DimensionType {
 		 *
 		 * @param desiredRawId the new raw id for this dimension type
 		 * @return this {@code Builder} object
-		 * @apiNote Mods that used to have a dimension with a manually set id
+		 * '@'apiNote Mods that used to have a dimension with a manually set id
 		 * may use this method to set a default id corresponding to the old one,
 		 * so as not to break compatibility with old worlds.
 		 */

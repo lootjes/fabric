@@ -119,7 +119,7 @@ public class ChunkRenderInfo {
 	}
 
 	/**
-	 * Cached values for {@link BlockState#getBlockBrightness(BlockRenderView, BlockPos)}.
+	 * Cached values for {'@'link BlockState#getBlockBrightness(BlockRenderView, BlockPos)}.
 	 * See also the comments for {@link #brightnessCache}.
 	 */
 	int cachedBrightness(BlockPos pos) {

@@ -83,7 +83,7 @@ public abstract class ColorHelper {
 	}
 
 	/**
-	 * Same results as {@link BakedQuadFactory#method_3456(Direction)}.
+	 * Same results as {'@'link BakedQuadFactory#method_3456(Direction)}.
 	 */
 	public static float diffuseShade(Direction direction) {
 		return FACE_SHADE_FACTORS[direction.getId()];
